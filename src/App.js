@@ -1,11 +1,15 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
+import Navigation from "./components/Navigation";
+import Project from "./components/Project";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ContactForm from "./components/Contact";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

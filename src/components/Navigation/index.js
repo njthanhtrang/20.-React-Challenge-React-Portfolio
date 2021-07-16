@@ -14,28 +14,25 @@ function Nav(props) {
   console.log("props", props);
   return (
     <header>
-      <h2>
-        <a data-testid="link" href="/">
-          <span role="img" aria-label="camera">
-          🙋🏻‍♀️
-          </span>
-          Jennifer Nguyen
-        </a>
-      </h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
+            <a href="#about" onClick={() => setContactSelected(false)}>
               About me
             </a>
           </li>
-          {/* <li className="mx-2">
-            <a data-testid="portfolio" href="#portfolio" onClick={() => setContactSelected(false)}>
+          <li className="mx-2">
+            <a href="#portfolio" onClick={() => setContactSelected(false)}>
               Portfolio
             </a>
-          </li> */}
+          </li>
           <li className={`mx-2 ${contactSelected && "navActive"}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
+          </li>
+          <li className="mx-2">
+            <a href="#resume" onClick={() => setContactSelected(false)}>
+              Resume
+            </a>
           </li>
           {/* when map over anything in JSX, outermost element must have key attribute */}
           {/* and return only a single JSX element */}

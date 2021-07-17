@@ -11,14 +11,10 @@ import "./App.css";
 
 // root component (wraps other components)
 function App() {
-  // initial value of contactSelected is false, prevent ContactForm from showing initially
-  // Gallery and About displays instead
-  const [categorySelected, setCategorySelected] = useState("About me");
+  const [page, setPage] = useState("About me");
 
   const [categories] = useState([
-    {
-      name: "About me",
-    },
+    { name: "About me" },
     { name: "Porfolio" },
     {
       name: "Contact",
@@ -28,10 +24,8 @@ function App() {
     },
   ]);
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
   const currentPage = () => {
-    switch (categorySelected) {
+    switch (page) {
       case "Portfolio":
         return <Project />;
       case "Contact":
@@ -43,19 +37,16 @@ function App() {
     }
   };
 
+
   return (
     <div>
-      <Header>
-        <Nav
-          categories={categories}
-          setCurrentCategory={setCurrentCategory}
-          currentCategory={currentCategory}
-          categorySelected={categorySelected}
-          setCategorySelected={setCategorySelected}
-        />
-      </Header>
+      <Header 
+      categories={categories}
+      page={page}
+      setPage={setPage}
+      ></Header>
       <main>
-        <div>{currentPage(categorySelected)}</div>
+        <div>{currentPage(page)}</div>
       </main>
       <Footer></Footer>
     </div>

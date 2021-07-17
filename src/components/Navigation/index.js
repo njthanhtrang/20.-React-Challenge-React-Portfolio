@@ -2,27 +2,19 @@ import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
-  const { categories = [], setCurrentCategory, currentCategory, contactSelected, setContactSelected } = props;
-  // callback fx
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-    // array with single element, direct hook to rerender component on changes to value of this state
-    // if currentCategory changes, component rerenders so change in document.title is visible to user
-  }, [currentCategory]);
+  const { categories = [], setPage, currentPage } = props;
 
-  console.log("category", currentCategory);
-  console.log("props", props);
   return (
     <header>
       <nav>
         <ul className="flex-row">
-          <li className="mx-2">
-            <a href="#about" onClick={() => setContactSelected(false)}>
+          {/* <li className="mx-2">
+            <a href="#about">
               About me
             </a>
           </li>
           <li className="mx-2">
-            <a href="#portfolio" onClick={() => setContactSelected(false)}>
+            <a href="#portfolio">
               Portfolio
             </a>
           </li>
@@ -30,10 +22,10 @@ function Nav(props) {
             <span onClick={() => setContactSelected(true)}>Contact</span>
           </li>
           <li className="mx-2">
-            <a href="#resume" onClick={() => setContactSelected(false)}>
+            <a href="#resume">
               Resume
             </a>
-          </li>
+          </li> */}
           {/* when map over anything in JSX, outermost element must have key attribute */}
           {/* and return only a single JSX element */}
           {categories.map((category) => (
@@ -41,15 +33,14 @@ function Nav(props) {
             // as long as ${currentCategory.name === category.name, navActive will be returned
             <li
               className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && "navActive"
+                currentPage.name === category.name && "navActive"
               }`}
               key={category.name}
             >
               {/* callback fx declaration to selectively render, not auto */}
               <span
                 onClick={() => {
-                  setCurrentCategory(category);
-                  setContactSelected(false);
+                  setPage(category);
                 }}
               >
                 {capitalizeFirstLetter(category.name)}

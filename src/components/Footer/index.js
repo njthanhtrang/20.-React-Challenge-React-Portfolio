@@ -8,11 +8,10 @@ function Footer() {
   return (
     
     <footer>
-        <a href="/" className="fa-solid fa-envelope">
-          Jennifer Nguyen
+        <a href="njthanhtrang@gmail.com" className="fa-solid fa-envelope">
+        <FontAwesomeIcon icon="fa-solid fa-envelope" />
         </a>
         {/* <FontAwesomeIcon icon={faCoffee} /> */}
-        <FontAwesomeIcon icon="fa-solid fa-envelope" />
     </footer>
   );
 }

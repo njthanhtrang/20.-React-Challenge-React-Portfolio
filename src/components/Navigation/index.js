@@ -1,9 +1,6 @@
-import React, { useEffect } from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import React from "react";
 
 function Nav(props) {
-  const { categories = [], setPage, currentPage } = props;
-
   return (
     <header>
       <nav>
@@ -28,25 +25,28 @@ function Nav(props) {
           </li> */}
           {/* when map over anything in JSX, outermost element must have key attribute */}
           {/* and return only a single JSX element */}
-          {categories.map((category) => (
+          {props.categories.map((category) => {
             // SHORT CIRCUIT EXPRESSSION
             // as long as ${currentCategory.name === category.name, navActive will be returned
-            <li
-              className={`mx-1 ${
-                currentPage.name === category.name && "navActive"
-              }`}
-              key={category.name}
-            >
-              {/* callback fx declaration to selectively render, not auto */}
-              <span
-                onClick={() => {
-                  setPage(category);
-                }}
+            return (
+              <li
+                key={category}
               >
-                {capitalizeFirstLetter(category.name)}
-              </span>
-            </li>
-          ))}
+                {/* callback fx declaration to selectively render, not auto */}
+                <a
+                  href={"#" + category.name.toLowerCase()}
+                  onClick={() => {
+                    props.setPage(category.name)
+                  }}
+                  className={`mx-1 ${
+                    props.page === category.name && "navActive"
+                  }`}
+                >
+                  {category.name}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </header>

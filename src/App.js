@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Nav from "./components/Navigation";
 import About from "./components/About";
 import Project from "./components/Project";
 import Header from "./components/Header";
@@ -7,6 +6,7 @@ import Footer from "./components/Footer";
 import ContactForm from "./components/Contact";
 import Resume from "./components/Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
 import "./App.css";
 
 // root component (wraps other components)
@@ -14,7 +14,7 @@ function App() {
   const [page, setPage] = useState("About me");
 
   const [categories] = useState([
-    { name: "About me" },
+    { name: "About" },
     { name: "Porfolio" },
     {
       name: "Contact",

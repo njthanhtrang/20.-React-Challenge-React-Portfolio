@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import Nav from "./components/Navigation";
 import About from "./components/About";
-import Navigation from "./components/Navigation";
 import Project from "./components/Project";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -13,51 +13,49 @@ import "./App.css";
 function App() {
   // initial value of contactSelected is false, prevent ContactForm from showing initially
   // Gallery and About displays instead
-  const [contactSelected, setContactSelected] = useState(false);
+  const [categorySelected, setCategorySelected] = useState("About me");
 
   const [categories] = useState([
     {
-      // key is often parentheses
       name: "About me",
-      description:
-        "Hi, my name is Jennifer and I am a junior developer with a background in the health sciences.",
     },
-    { name: "Porfolio", description: "Snapshots of my work, take a look!" },
+    { name: "Porfolio" },
     {
       name: "Contact",
-      description: "I will try my best to contact you within 24 hours.",
     },
     {
       name: "Resume",
-      description: "Full-stack proficiencies",
     },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
+  const currentPage = () => {
+    switch (categorySelected) {
+      case "Portfolio":
+        return <Project />;
+      case "Contact":
+        return <ContactForm />;
+      case "Resume":
+        return <Resume />;
+      default:
+        return <About />;
+    }
+  };
+
   return (
     <div>
       <Header>
-        <Navigation
+        <Nav
           categories={categories}
           setCurrentCategory={setCurrentCategory}
           currentCategory={currentCategory}
-          contactSelected={contactSelected}
-          setContactSelected={setContactSelected}
-        ></Navigation>
+          categorySelected={categorySelected}
+          setCategorySelected={setCategorySelected}
+        />
       </Header>
       <main>
-        <div>
-          {!contactSelected ? (
-            <>
-              <About></About>
-              <Project></Project>
-              <Resume></Resume>
-            </>
-          ) : (
-            <ContactForm></ContactForm>
-          )}
-        </div>
+        <div>{currentPage(categorySelected)}</div>
       </main>
       <Footer></Footer>
     </div>

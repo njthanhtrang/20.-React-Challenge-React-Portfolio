@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/20.-React-Challenge-React-Portfolio/static/css/main.6ae15e94.chunk.css",
+    "main.js": "/20.-React-Challenge-React-Portfolio/static/js/main.2619f0cc.chunk.js",
+    "main.js.map": "/20.-React-Challenge-React-Portfolio/static/js/main.2619f0cc.chunk.js.map",
+    "runtime-main.js": "/20.-React-Challenge-React-Portfolio/static/js/runtime-main.c4f5c2a6.js",
+    "runtime-main.js.map": "/20.-React-Challenge-React-Portfolio/static/js/runtime-main.c4f5c2a6.js.map",
+    "static/css/2.d45d6843.chunk.css": "/20.-React-Challenge-React-Portfolio/static/css/2.d45d6843.chunk.css",
+    "static/js/2.8bc4e8c4.chunk.js": "/20.-React-Challenge-React-Portfolio/static/js/2.8bc4e8c4.chunk.js",
+    "static/js/2.8bc4e8c4.chunk.js.map": "/20.-React-Challenge-React-Portfolio/static/js/2.8bc4e8c4.chunk.js.map",
+    "static/js/3.9b091d9d.chunk.js": "/20.-React-Challenge-React-Portfolio/static/js/3.9b091d9d.chunk.js",
+    "static/js/3.9b091d9d.chunk.js.map": "/20.-React-Challenge-React-Portfolio/static/js/3.9b091d9d.chunk.js.map",
+    "index.html": "/20.-React-Challenge-React-Portfolio/index.html",
+    "static/css/2.d45d6843.chunk.css.map": "/20.-React-Challenge-React-Portfolio/static/css/2.d45d6843.chunk.css.map",
+    "static/css/main.6ae15e94.chunk.css.map": "/20.-React-Challenge-React-Portfolio/static/css/main.6ae15e94.chunk.css.map",
+    "static/js/2.8bc4e8c4.chunk.js.LICENSE.txt": "/20.-React-Challenge-React-Portfolio/static/js/2.8bc4e8c4.chunk.js.LICENSE.txt",
+    "static/media/PortfolioImage.ddbab086.jpeg": "/20.-React-Challenge-React-Portfolio/static/media/PortfolioImage.ddbab086.jpeg",
+    "static/media/brewmap.38ace9e1.jpeg": "/20.-React-Challenge-React-Portfolio/static/media/brewmap.38ace9e1.jpeg",
+    "static/media/budgettracker.2ae20fd6.png": "/20.-React-Challenge-React-Portfolio/static/media/budgettracker.2ae20fd6.png",
+    "static/media/famfin.fa951ba5.png": "/20.-React-Challenge-React-Portfolio/static/media/famfin.fa951ba5.png",
+    "static/media/notetaker.6ec11af5.png": "/20.-React-Challenge-React-Portfolio/static/media/notetaker.6ec11af5.png",
+    "static/media/resumePDF.34f4f973.pdf": "/20.-React-Challenge-React-Portfolio/static/media/resumePDF.34f4f973.pdf",
+    "static/media/techblog.f80dbe97.png": "/20.-React-Challenge-React-Portfolio/static/media/techblog.f80dbe97.png",
+    "static/media/weatherdashboard.e724fcfb.png": "/20.-React-Challenge-React-Portfolio/static/media/weatherdashboard.e724fcfb.png",
+    "static/media/weatherornot.9bb2fac5.png": "/20.-React-Challenge-React-Portfolio/static/media/weatherornot.9bb2fac5.png",
+    "static/media/workdayscheduler.ddd727c2.png": "/20.-React-Challenge-React-Portfolio/static/media/workdayscheduler.ddd727c2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c4f5c2a6.js",
+    "static/css/2.d45d6843.chunk.css",
+    "static/js/2.8bc4e8c4.chunk.js",
+    "static/css/main.6ae15e94.chunk.css",
+    "static/js/main.2619f0cc.chunk.js"
+  ]
+}

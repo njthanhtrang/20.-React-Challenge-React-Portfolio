@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import About from "./components/About";
-import Portfolio from "./components/Project";
+import Portfolio from "./components/Portfolio";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ContactForm from "./components/Contact";
 import Resume from "./components/Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // root component (wraps other components)
 function App() {
@@ -14,7 +15,7 @@ function App() {
 
   const [categories] = useState([
     { name: "About" },
-    { name: "Porfolio" },
+    { name: "Portfolio" },
     {
       name: "Contact",
     },

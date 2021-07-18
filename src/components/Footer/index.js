@@ -10,13 +10,13 @@ function Footer() {
         <a href="mailto:njthanhtrang@gmail.com">
           <FaEnvelope />
         </a>
-        <a href="https://github.com/njthanhtrang">
+        <a href="https://github.com/njthanhtrang" target="_blank">
           <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/njthanhtrang/">
+        <a href="https://www.linkedin.com/in/njthanhtrang/" target="_blank">
           <FaLinkedin />
         </a>
-        <a href="https://stackoverflow.com/users/story/15040375">
+        <a href="https://stackoverflow.com/users/story/15040375" target="_blank">
           <FaStackOverflow />
         </a>
       </div>

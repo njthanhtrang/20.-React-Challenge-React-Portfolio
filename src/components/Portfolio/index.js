@@ -1,11 +1,11 @@
 // child component of Gallery component handles photo rendering logic
 import React from "react";
 import Project from "../../components/Project";
-import brewmap from "../../assets/img/brewmap.jpeg";
+// import brewmap from "../../assets/img/brewmap.jpeg";
 import weatherornot from "../../assets/img/weatherornot.png";
 
 
-const Portfolio = (singleProject) => {
+const Portfolio = () => {
 
   const projects = [
     {

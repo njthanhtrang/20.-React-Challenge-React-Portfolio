@@ -3,9 +3,10 @@
 ## Description 
 ​This React app is a portfolio showcasing my projects and skills  in building single-page applications.
 
-
-explain and showcase what your application does, justify the technologies used, and even talk about some of the challenges you faced and features you hope to implement in the future. A good README helps you stand out among the large crowd of developers putting their work on GitHub.
-​
+The portfolio includes a page containing a header, a section for content, and a footer
+The header includes my name and navigation with titles corresponding to different sections of the portfolio: About Me, Portfolio, Contact, and Resume with images of applications I've built with links to both the deployed applications and the corresponding GitHub repositories.
+When the user moves the cursor out of one of the form fields without entering text or having a proper email address, they receive a notification that this field is required, or they've entered an invalid email address, respectively.
+The Resume section links to a downloadable resume and a list of my proficiencies, and the footer includes links to my email, GitHub, LinkedIn, and StackedOverflow profiles.​
 ​
 ## Table of Contents
 ​
@@ -16,13 +17,16 @@ explain and showcase what your application does, justify the technologies used, 
 ​
 ## Usage 
 ​
-Visit the deployed site at https://njthanhtrang.github.io/20.-React-Challenge-React-Portfolio/
+Visit the deployed site at http://njthanhtrang.github.io/20.-React-Challenge-React-Portfolio/
 
 ​
 ## Credits
 ​
 Created by Jennifer Nguyen.
 
+__Built With:__
+
+* React https://reactjs.org/
 * react-icons https://react-icons.github.io/react-icons/
 * Boostrap https://getbootstrap.com/docs/4.0/components/card/
 

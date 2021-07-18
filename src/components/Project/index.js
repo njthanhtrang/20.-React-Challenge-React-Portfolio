@@ -1,7 +1,7 @@
 // child component of Gallery component handles photo rendering logic
 import React from "react";
 
-const Project = ({singleProject}) => {
+const Projects = ({ singleProject }) => {
 
   return (
     <div>
@@ -23,4 +23,4 @@ const Project = ({singleProject}) => {
   );
 };
 
-export default Project;
+export default Projects;

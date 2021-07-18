@@ -30,7 +30,7 @@ function Nav(props) {
             // as long as ${currentCategory.name === category.name, navActive will be returned
             return (
               <li
-                key={category}
+                key={category.name}
               >
                 {/* callback fx declaration to selectively render, not auto */}
                 <a

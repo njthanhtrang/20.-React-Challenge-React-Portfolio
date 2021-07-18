@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import About from "./components/About";
-import Project from "./components/Project";
+import Portfolio from "./components/Project";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ContactForm from "./components/Contact";
 import Resume from "./components/Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { library } from "@fortawesome/fontawesome-svg-core";
 import "./App.css";
 
 // root component (wraps other components)
@@ -27,7 +26,7 @@ function App() {
   const currentPage = () => {
     switch (page) {
       case "Portfolio":
-        return <Project />;
+        return <Portfolio />;
       case "Contact":
         return <ContactForm />;
       case "Resume":

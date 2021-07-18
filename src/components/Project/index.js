@@ -1,52 +1,26 @@
 // child component of Gallery component handles photo rendering logic
-import React, { useState } from "react";
+import React from "react";
 
-const ProjectList = () => {
-
-  const [photos] = useState([
-    {
-      name: "Weather or Not",
-    },
-    {
-      name: "Family Financials",
-    },
-    {
-      name: "BrewMap 3.0",
-    },
-    {
-      name: "Budget Tracker",
-    },
-    {
-      name: "Tech Blog",
-    },
-    {
-      name: "Note Taker",
-    },
-    {
-      name: "Weather Dashboard",
-    },
-    {
-      name: "Work Day Scheduler",
-    },
-  ]);
+const Project = ({ singleProject }) => {
 
   return (
     <div>
-        {/* only renders if isModalOpen is true, Modal changes state isModalOpen using closures */}
       <div className="flex-row">
-        {photos.map((image, i) => (
+      <a href={singleProject.deployedLink}>{singleProject.title}</a>
+      <a href={singleProject.github}>GitHub repo</a>
+      <hr></hr>
           <img
-            //   incremental naming of images using i
-            // src={require(`../../assets/small/${i}.jpg`)}
-            alt={image.name}
+            src={singleProject.image}
+            alt={singleProject.title}
             className="img-thumbnail mx-1"
-            // NEED key value, a unique string
-            key={image.name}
+            // // NEED key value, a unique string
+            key={singleProject.title}
           />
-        ))}
+      </div>
+      <div>
       </div>
     </div>
   );
 };
 
-export default ProjectList;
+export default Project;

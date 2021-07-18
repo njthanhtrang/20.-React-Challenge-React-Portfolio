@@ -1,10 +1,10 @@
 // child component of Gallery component handles photo rendering logic
 import React from "react";
-import Card from "react-bootstrap";
 
 const Projects = ({ singleProject }) => {
   return (
     <div key={singleProject.title}>
+      <div>
       <link
         rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -12,19 +12,18 @@ const Projects = ({ singleProject }) => {
         crossorigin="anonymous"
       ></link>
 
-      <div className="flex-row card card-body" style={{ width: "35rem" }}>
+      <div className="flex-row card card-body" style={{ width: "35rem", marginBottom: "2rem", backgroundColor: "#a2c7e5" }}>
         <a href={singleProject.deployedLink}>{singleProject.title}</a>
 
         <img
           src={singleProject.image}
           alt={singleProject.title}
           className="img-thumbnail mx-1"
-          // // NEED key value, a unique string
-          key={singleProject.title}
         />
         <a href={singleProject.github} className="card-text">
           GitHub Link
         </a>
+      </div>
       </div>
     </div>
   );

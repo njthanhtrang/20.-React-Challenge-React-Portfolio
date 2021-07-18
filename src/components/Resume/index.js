@@ -4,7 +4,7 @@ import resumePDF from "../../assets/resumePDF.pdf";
 function Resume() {
   return (
     <section className="my-5">
-      <a href={resumePDF} target="_blank">
+       <a href={resumePDF} target="_blank" rel="noreferrer">
         <h3>View my resume here!</h3>
       </a>
       <h1 id="resume">Front-end Proficiencies</h1>

@@ -12,7 +12,7 @@ import weatherdashboard from "../../assets/img/weatherdashboard.png";
 import workdayscheduler from "../../assets/img/workdayscheduler.png";
 
 
-const Portfolio = () => {
+const Portfolio = (singleProject) => {
 
   const projectList = [
     {
@@ -66,13 +66,11 @@ const Portfolio = () => {
 ];
 
   return (
-    <div>
+    <div key={singleProject.title}>
       <div className="flex-row">
           <h1>Projects</h1>
           <br></br>
-      </div>
-      <div>
-      {projectList.map((singleProject) => (
+        {projectList.map((singleProject) => (
             <Projects singleProject={singleProject}/>
         ))}
       </div>

@@ -4,7 +4,7 @@ import { FaGithub, FaEnvelope, FaLinkedin, FaStackOverflow } from "react-icons/f
 
 function Footer() {
   return (
-    <IconContext.Provider value={{ size:"3em", style: { marginLeft: "4rem", marginBottom: "2rem" } }}>
+    <IconContext.Provider value={{ size:"3em", style: { marginLeft: "20rem", marginBottom: "2rem" } }}>
     <footer>
       <div style={{ justifyContent: "space-evenly"}}>
         <a href="mailto:njthanhtrang@gmail.com">

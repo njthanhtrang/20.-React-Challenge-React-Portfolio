@@ -4,7 +4,7 @@ function Nav(props) {
   return (
     <header>
       <nav>
-        <ul className="flex-row">
+        <ul className="flex-row" style={{ justifyContent: "flex-end"}}>
           {/* <li className="mx-2">
             <a href="#about">
               About me

@@ -12,7 +12,7 @@ const Projects = ({ singleProject }) => {
         crossorigin="anonymous"
       ></link>
 
-      <div className="flex-row card card-body" style={{ width: "35rem", marginBottom: "2rem", backgroundColor: "#a2c7e5" }}>
+      <div className="flex-row card card-body" style={{ width: "35rem", marginBottom: "2rem", backgroundColor: "#a2c7e5", fontSize: "20px" }}>
         <a href={singleProject.deployedLink}>{singleProject.title}</a>
 
         <img

@@ -29,69 +29,70 @@ function Resume() {
     <Container className="container my-5">
       <Row>
         <Col>
-          <a href={DevResume} target="_blank" rel="noreferrer">
-            <h3>View my resume here!</h3>
-          </a>
-          <br></br>
           <h3>Technical Skills:</h3>
-          <h3>
-          • GitHub <FaGithub /></h3>
-          <h3>• Git <FaGitAlt /></h3>
-          <h3>• Heroku <SiHeroku /></h3>
-          <h3>• Webpack <SiWebpack /></h3>
+          <h5>
+          • GitHub <FaGithub /></h5>
+          <h5>• Git <FaGitAlt /></h5>
+          <h5>• Heroku <SiHeroku /></h5>
+          <h5>• Webpack <SiWebpack /></h5>
+          <br>
+          </br>
+          <a href={DevResume} target="_blank" rel="noreferrer">
+            <h5>View my resume here!</h5>
+          </a>
         </Col>
 
         <Col>
           <h3 id="resume">Front-end Proficiencies:</h3>
           <br></br>
-          <h3>
+          <h5>
             • HTML
             <FaHtml5 />
-          </h3>
-          <h3>
+          </h5>
+          <h5>
             • CSS
             <FaCss3Alt />
-          </h3>
-          <h3>
+          </h5>
+          <h5>
             • JavaScript
             <FaJsSquare />
-          </h3>
-          <h3>
+          </h5>
+          <h5>
             • jQuery
             <DiJqueryLogo />
-          </h3>
-          <h3>• Responsive design</h3>
-          <h3>
+          </h5>
+          <h5>• Responsive design</h5>
+          <h5>
             • React
             <FaReact /> <SiReactrouter /> <SiRedux />
-          </h3>
-          <h3>
+          </h5>
+          <h5>
             • Boostrap
             <FaBootstrap />
-          </h3>
+          </h5>
         </Col>
 
         <Col>
           <h3 id="resume">Back-end Proficiencies:</h3>
           <br></br>
-          <h3>• APIs</h3>
-          <h3>
+          <h5>• APIs</h5>
+          <h5>
             • Node
             <FaNode /> <FaNpm />
-          </h3>
-          <h3>• Express</h3>
-          <h3>
+          </h5>
+          <h5>• Express</h5>
+          <h5>
             • MySQL, Sequelize <SiMysql />
-          </h3>
-          <h3>
+          </h5>
+          <h5>
             • MongoDB, Mongoose
             <DiMongodb />
-          </h3>
-          <h3>• REST</h3>
-          <h3>
+          </h5>
+          <h5>• REST</h5>
+          <h5>
             • GraphQL
             <SiGraphql />
-          </h3>
+          </h5>
         </Col>
       </Row>
 

@@ -27,16 +27,26 @@ import { Container, Row, Col } from "react-bootstrap";
 function Resume() {
   return (
     <Container className="container my-5">
+      <h1>Technical Skills:</h1>
+      <br></br>
+      <br></br>
+      <br></br>
       <Row>
+        <br></br>
         <Col>
-          <h3>Technical Skills:</h3>
           <h5>
-          • GitHub <FaGithub /></h5>
-          <h5>• Git <FaGitAlt /></h5>
-          <h5>• Heroku <SiHeroku /></h5>
-          <h5>• Webpack <SiWebpack /></h5>
-          <br>
-          </br>
+            • GitHub <FaGithub />
+          </h5>
+          <h5>
+            • Git <FaGitAlt />
+          </h5>
+          <h5>
+            • Heroku <SiHeroku />
+          </h5>
+          <h5>
+            • Webpack <SiWebpack />
+          </h5>
+          <br></br>
           <a href={DevResume} target="_blank" rel="noreferrer">
             <h5>View my resume here!</h5>
           </a>

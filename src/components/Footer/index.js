@@ -1,12 +1,15 @@
 import React from "react";
 import { IconContext } from "react-icons/lib";
 import { FaGithub, FaEnvelope, FaLinkedin, FaStackOverflow } from "react-icons/fa";
+import { Container, Row, Col } from "react-bootstrap";
 
 function Footer() {
   return (
-    <IconContext.Provider value={{ size:"3em", style: { marginLeft: "20rem", marginBottom: "2rem" } }}>
+    <Container >
+    <IconContext.Provider value={{ size:"3em"}}>
     <footer>
-      <div style={{ justifyContent: "space-evenly"}}>
+      <Row>
+      <Col md={{ span: 4, offset: 10 }}>
         <a href="mailto:njthanhtrang@gmail.com">
           <FaEnvelope />
         </a>
@@ -19,9 +22,11 @@ function Footer() {
         <a href="https://stackoverflow.com/users/story/15040375" target="_blank" rel="noreferrer">
           <FaStackOverflow />
         </a>
-      </div>
+        </Col>
+      </Row>
     </footer>
     </IconContext.Provider>
+    </Container>
     
   );
 

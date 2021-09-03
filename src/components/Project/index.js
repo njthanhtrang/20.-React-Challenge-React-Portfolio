@@ -30,7 +30,7 @@ const Projects = ({ singleProject }) => {
       <Card.Title style={{ margin: "15px", fontSize: "27px", color: "#094067"}}>
         {singleProject.title}
       </Card.Title>
-      <Card.Text className="mb-2 text-muted" style={{ fontSize: "15px" }}>{singleProject.summary}</Card.Text>
+      <Card.Text className="mb-2 text-muted" style={{ fontSize: "15px", margin: "20px 0px 20px 10px" }}>{singleProject.summary}</Card.Text>
       <Card.Img
         variant="top"
         src={singleProject.image}

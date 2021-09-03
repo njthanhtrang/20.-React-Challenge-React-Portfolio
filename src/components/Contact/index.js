@@ -31,35 +31,35 @@ function ContactForm() {
 
   //   sync internal state of component formState with user input from DOM
   // onBlur or onChange event listener ensures this fires everytime keystroke typed into name field
-  function handleChange(e) {
-    // if <input> is email, validate value with validateEmail, assign to isValid
-    if (e.target.name === "email") {
-      const isValid = validateEmail(e.target.value);
-      console.log(isValid);
-      // isValid conditional statement
-      if (!isValid) {
-        setErrorMessage("Your email is invalid.");
-      } else {
-        setErrorMessage("");
-      }
-      // if <input> is message and name form elements
-    } else {
-      // if blank, error message
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage("");
-      }
-    }
+  // function handleChange(e) {
+  //   // if <input> is email, validate value with validateEmail, assign to isValid
+  //   if (e.target.name === "email") {
+  //     const isValid = validateEmail(e.target.value);
+  //     console.log(isValid);
+  //     // isValid conditional statement
+  //     if (!isValid) {
+  //       setErrorMessage("Your email is invalid.");
+  //     } else {
+  //       setErrorMessage("");
+  //     }
+  //     // if <input> is message and name form elements
+  //   } else {
+  //     // if blank, error message
+  //     if (!e.target.value.length) {
+  //       setErrorMessage(`${e.target.name} is required.`);
+  //     } else {
+  //       setErrorMessage("");
+  //     }
+  //   }
 
-    // console.log("errorMessage", errorMessage);
-  }
+  //   // console.log("errorMessage", errorMessage);
+  // }
 
   // JSX DOM elements
   return (
     <section>
-      <h1 data-testid="h1tag">Reach me here!</h1>
-      <a href="mailto:njthanhtrang@gmail.com">njthanhtrang@gmail.com</a>
+      <h1 data-testid="h1tag">Reach me</h1>
+      <a href="mailto:njthanhtrang@gmail.com">@njthanhtrang@gmail.com</a>
       {/* <br></br>
       <h1 data-testid="h1tag">Leave a Message</h1>
       <form id="contact-form" onSubmit={handleSubmit}>

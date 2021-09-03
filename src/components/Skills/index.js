@@ -24,10 +24,10 @@ import {
 } from "react-icons/si";
 import { Container, Row, Col } from "react-bootstrap";
 
-function Resume() {
+function Skills() {
   return (
     <Container className="container my-5">
-      <h1>Technical Skills:</h1>
+      <h1>Proficiencies:</h1>
       <br></br>
       <br></br>
       <br></br>
@@ -53,7 +53,7 @@ function Resume() {
         </Col>
 
         <Col>
-          <h3 id="resume">Front-end Proficiencies:</h3>
+          <h3 id="resume">Front-end:</h3>
           <br></br>
           <h5>
             • HTML
@@ -83,7 +83,7 @@ function Resume() {
         </Col>
 
         <Col>
-          <h3 id="resume">Back-end Proficiencies:</h3>
+          <h3 id="resume">Back-end:</h3>
           <br></br>
           <h5>• APIs</h5>
           <h5>
@@ -125,4 +125,4 @@ function Resume() {
   );
 }
 
-export default Resume;
+export default Skills;

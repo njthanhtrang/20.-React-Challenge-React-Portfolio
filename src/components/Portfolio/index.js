@@ -15,7 +15,7 @@ const Portfolio = (singleProject) => {
 
   const projectList = [
     {
-      title: "Weather or Not",
+      title: "Weather-or-Not",
       summary: "Activity recommender based on the searched city’s location and current weather conditions. Integrates the Open Weather Map API with Eventbrite events in the area to provide indoor or outdoor activity suggestions.",
       image: weatherornot,
       technologies: "Node.js, JavaScript, OpenWeatherMap API, EventBrite API, MD Bootstrap, GitHub Pages, server-side APIs, localStorage",

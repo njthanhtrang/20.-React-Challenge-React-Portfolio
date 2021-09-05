@@ -59,11 +59,7 @@ const Projects = ({ singleProject }) => {
         >
           <FaExternalLinkAlt style={{ fontSize: "25px" }}/>
         </a>
-        <br></br>
-        <br></br>
-        <br></br>
       </Card.Footer>
-
        {/* <div>
         <link
           rel="stylesheet"
@@ -98,6 +94,7 @@ const Projects = ({ singleProject }) => {
           <div>Built with: {singleProject.technologies}</div>
         </div>
       </div>  */}
+    
    </Card>
   );
 };

@@ -47,10 +47,10 @@ function About() {
             creativity, problem solving, and empathy to develop user-friendly
             applications.
             <br></br>
-            <br></br>I'm now inspired by the need for greater ease of use and
-            access to medical resources, and hope to create patient-focused
+            <br></br>Seeing the need for greater ease of use and
+            access to medical resources, I hope to create patient-focused
             applications that will connect and encourage people to live happier,
-            more health-minded lifestyles. I am excited to learn a new technology and innovate with the user in mind👩🏻‍💻
+            more health-minded lifestyles. Let's connect- I'm excited to learn a new technology and innovate with the user in mind👩🏻‍💻
           </h6>
           <br></br>
           <br></br>

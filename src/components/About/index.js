@@ -1,27 +1,64 @@
 import React from "react";
 import PortfolioImage from "../../assets/PortfolioImage.JPG";
+import {
+    FaGitAlt,
+    FaGithub,
+    FaHtml5,
+    FaCss3Alt,
+    FaJsSquare,
+    FaBootstrap,
+    FaNode,
+    FaReact,
+    FaNpm,
+  } from "react-icons/fa";
+  import { DiJqueryLogo, DiMongodb } from "react-icons/di";
+import {
+  SiMysql,
+  SiHeroku,
+  SiWebpack,
+  SiRedux,
+  SiReactrouter,
+  SiGraphql,
+} from "react-icons/si";
 
 function About() {
   return (
-    <section className="col-10">
-      <h1 id="about">About me</h1>
-      <img
-        src={PortfolioImage}
-        className="my-2"
-        style={{ width: "25%" }}
-        alt="cover"
-      ></img>
-      <h6 style={{ width: "40%", justifyContent: "center" }} id="about">
-        Hi there! My name is Jennifer and I'm a full-stack software engineer. I
-        graduated from UC Berkeley Extension's Web Development Bootcamp, which
-        equipped me with a strong foundation in object-oriented programming of progressive web
-        applications using the MongoDB, Express, React and Node.js (MERN)
-        JavaScript stack. Inspired by my background in medical sciences, I hope
-        to alleviate the need for ease of use and access to medical resources,
-        and create patient-focused applications that connect and encourage
-        people to live happier, more health-minded lifestyles. I'd be happy to connect and innovate with the user in mind*✧･ﾟ:
-      </h6>
-    </section>
+    <div className="container">
+        <div className="row">
+      
+      <div className="col-6">
+        <img
+          src={PortfolioImage}
+          className="my-2"
+          style={{ width: "60%" }}
+          alt="cover"
+        ></img>
+      </div>
+      <div className="col-6">
+        <h1 id="about">About me</h1>
+        <h6 style={{ width: "80%", justifyContent: "center" }} id="about">
+          Hi! My name is Jennifer and I'm a full-stack software engineer
+          leveraging a background in clinical healthcare. I am a graduate of UC
+          Berkeley Extension's Web Development Bootcamp, which provided me a
+          strong foundation in object-oriented programming of progressive web
+          applications using the MongoDB, Express, React and Node.js (MERN)
+          JavaScript stack.
+          <br></br>
+          <br></br>Inspired by my background in medical sciences, I hope to
+          alleviate the need for ease of use and access to medical resources,
+          and create patient-focused applications that connect and encourage
+          people to live happier, more health-minded lifestyles. With this
+          background, I am effective at combining creativity, problem solving,
+          and empathy to develop user-friendly applications.
+        </h6>
+        <br></br>
+        <br></br>
+        <br></br>
+        <h4>Technical Skills:</h4>
+        <h2><FaHtml5 /><FaCss3Alt /><FaJsSquare /><DiJqueryLogo /><FaReact /><SiRedux /><FaBootstrap /><FaNode /><SiMysql /><DiMongodb /><SiGraphql /></h2>
+      </div>
+      </div>
+    </div>
   );
 }
 

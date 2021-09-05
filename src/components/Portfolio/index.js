@@ -24,7 +24,7 @@ const Portfolio = (singleProject) => {
     },
     {
       title: "Family Financials",
-      summary: "Investment teaching tool that allows family members to pool funds and purchase stocks together. Uses an MVC folder structure and express-session & cookies authentication, environment variables to store API keys and sensitive information.",
+      summary: "Investment teaching tool that allows family members to pool funds and purchase stocks together. Uses an MVC folder structure and express-session & cookies authentication, environmental variables to store API keys and sensitive information.",
       image: famfin,
       technologies: "JavaScript, Node.js, Express.js, Handlebars.js, MySQL, Sequelize, Heroku, UIKit",
       deployedLink: "http://familyfinancials.herokuapp.com/",

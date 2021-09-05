@@ -19,7 +19,7 @@ function Header(props) {
     <header>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
       <h2>
-        <a href="/20.-React-Challenge-React-Portfolio/">
+        <a href="/20.-React-Challenge-React-Portfolio/" style={{ fontSize: "50px", margin: "20px" }}>
           Jennifer Nguyen
         </a>
       </h2>
